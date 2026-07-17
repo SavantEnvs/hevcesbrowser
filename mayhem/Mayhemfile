@@ -1,0 +1,10 @@
+project: savantenvs/hevcesbrowser
+target: hevcesbrowser-console
+
+cmds:
+  - cmd: /mayhem/hevcesbrowser-console
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hevcesbrowser-console/testsuite
